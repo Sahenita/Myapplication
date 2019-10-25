@@ -47,6 +47,7 @@ public class TabMainActivity extends AppCompatActivity implements View.OnClickLi
     boolean mStopHandler = false;
     android.support.constraint.ConstraintLayout coordinatorLayout;
     // to check if we are connected to Network
+ // to check if we are connected to Network
     boolean isConnected = true;
     ConnectivityManager.NetworkCallback connectivityCallback;
     Handler handler1 = new Handler();
