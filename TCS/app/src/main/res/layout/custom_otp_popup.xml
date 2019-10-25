@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fbfbfb"
+>
+
+    <RelativeLayout
+            android:id="@+id/upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp">
+        <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#000"
+        >
+            <com.rit.tcs.CustomText.CUstomTextRegular
+                    android:visibility="visible"
+                    android:id="@+id/popupTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/app_name"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:textSize="28sp"
+                    android:textColor="@android:color/white"
+                    android:typeface="sans"
+                    android:textStyle="normal"
+
+            />
+        </LinearLayout>
+
+
+        <com.rit.tcs.CustomText.CUstomTextRegular
+                android:visibility="visible"
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:textStyle="normal"
+                android:gravity="center_horizontal"
+                android:text="Do you want to remove?"
+                android:textSize="24sp"
+                android:layout_below="@+id/ll_top"
+                android:textColor="#00406F"
+               />
+
+         <com.rit.tcs.CustomText.CUstomEditTextRegular
+              android:layout_below="@+id/text"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:lines="4"
+              android:layout_marginLeft="80dp"
+              android:layout_marginRight="80dp"
+              android:textColor="#00223B"
+              android:hint="Enter admin otp"
+              android:layout_centerInParent="true"
+              android:textSize="25sp"
+              android:background="@drawable/bg_gray_selected"
+              android:layout_marginBottom="10dp"
+              android:gravity="left|center_vertical"
+              android:id="@+id/edit_txt" />
+
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/margin"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/upper"
+            android:background="#e5e5e5"
+            android:text="TextView"/>
+    <LinearLayout
+            android:id="@+id/lower"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="205dp"
+            android:layout_marginLeft="205dp"
+
+            android:layout_alignTop="@+id/margin" android:layout_marginTop="0dp">
+
+        <com.rit.tcs.CustomText.CUstomTextRegular
+                android:id="@+id/report"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Verify"
+                android:layout_marginTop="15dp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:background="#00223B"
+                android:layout_marginBottom="15dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="22sp"
+
+        />
+        <com.rit.tcs.CustomText.CUstomTextRegular
+                android:id="@+id/report1"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cancel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:background="#00223B"
+                android:layout_marginBottom="15dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="22sp"
+
+        />
+
+        <TextView
+                android:id="@+id/tvEventDetails"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dismiss"
+                android:visibility="gone"
+                android:background="@android:color/darker_gray"
+                android:text=""
+        />
+
+        <com.rit.tcs.CustomText.CUstomTextRegular
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:text="No"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="#4E6BC2"
+                android:id="@+id/cancel"
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:textSize="22sp"
+        />
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:id="@+id/margin1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/lower"
+        android:background="#D9D9D8"
+        android:text="TextView" />-->
+
+</RelativeLayout>

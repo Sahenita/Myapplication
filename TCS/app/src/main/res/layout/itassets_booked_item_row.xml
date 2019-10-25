@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/assetItems"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+        <LinearLayout android:layout_width="200dp"
+                      android:layout_height="wrap_content">
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+            <ImageView android:id="@+id/selectedCenter"
+                       android:layout_width="20dp"
+                       android:background="@drawable/ic_selectedarrow"
+                       android:visibility="visible"
+                       android:layout_gravity="center"
+                       android:layout_height="40dp"/>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#0093ff"
+                            android:id="@+id/rl_items"
+                            android:layout_marginLeft="-1dp"
+                            android:layout_toRightOf="@+id/selectedCenter"
+            >
+
+                <LinearLayout
+                        android:id="@+id/hdr"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:layout_marginLeft="12dp"
+                            android:orientation="horizontal">
+                        <com.rit.tcs.CustomText.CUstomTextLight
+                                android:layout_width="wrap_content"
+                                android:id="@+id/assetNames"
+                                android:layout_height="wrap_content"
+                                android:text="HP Elite Book"
+                                android:singleLine="true"
+                                android:gravity="left"
+                                android:textColor="#FFFFFF"
+                                android:textSize="27sp"/>
+                        <ImageView android:layout_width="14dp"
+                                   android:id="@+id/information"
+                                   android:layout_height="14dp"
+                                   android:visibility="gone"
+                        android:src="@drawable/ic_infoemation"
+                                   android:layout_marginTop="13dp"
+                        android:layout_marginLeft="3dp"/>
+
+                    </LinearLayout>
+
+                    <com.rit.tcs.CustomText.CUstomTextLight
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:id="@+id/passcode"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:text="Passcode"
+                            android:layout_marginRight="12dp"
+                            android:textColor="#FFFFFF"
+                            android:textSize="27sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_below="@+id/hdr"
+                        android:id="@+id/hdrDn"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                    <com.rit.tcs.CustomText.CUstomTextRegular
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="DND 17630"
+                            android:id="@+id/assetId"
+                            android:gravity="left"
+                            android:layout_marginLeft="12dp"
+                            android:textColor="#e8e8e8"
+                            android:textSize="16sp"/>
+
+                    <com.rit.tcs.CustomText.CUstomTextRegular
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:layout_marginRight="12dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lockerPasscode"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/btmUp"
+                        android:layout_below="@+id/hdrDn"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content">
+                    <com.rit.tcs.CustomText.CUstomTextRegular
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Booking Date Time"
+                            android:gravity="left"
+                            android:layout_marginLeft="12dp"
+                            android:id="@+id/bookingDateTm"
+                            android:textColor="#e1e5e8"
+                            android:textSize="18sp"/>
+                    <com.rit.tcs.CustomText.CUstomTextRegular
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:layout_marginRight="12dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/releaseDateTm"
+                            android:text="Release Date Time"
+                            android:textColor="#e1e5e8"
+                            android:textSize="18sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/btm"
+                        android:layout_below="@+id/btmUp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="wrap_content">
+                    <com.rit.tcs.CustomText.CUstomTextRegular
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Optical Mouse"
+                            android:id="@+id/bookingDateTmTxt"
+                            android:gravity="left"
+                            android:layout_marginLeft="12dp"
+                            android:textColor="#034fb5"
+                            android:textSize="16sp"/>
+                    <com.rit.tcs.CustomText.CUstomTextRegular
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/releaseDateTmTxt"
+                            android:gravity="right"
+                            android:layout_marginRight="12dp"
+                            android:layout_height="wrap_content"
+                            android:text="B3GHT5Y010_01"
+                            android:textColor="#034fb5"
+                            android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent"
+          android:background="#BEC8D0"
+          android:id="@+id/txt_view"
+          android:layout_below="@+id/assetItems"
+          android:layout_marginLeft="20dp"
+          android:layout_height="1px"
+    />
+</RelativeLayout>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00406F"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+    <LinearLayout android:id="@+id/ll_main1"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical"
+    >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+        >
+
+            <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/home"/>
+
+            <com.rit.tcs.CustomText.CUstomTextBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:text="Smart IT Resource Locker"
+                    android:textColor="#fff"
+                    android:textSize="32dp"/>
+
+            <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/tcs_logo_final1"/>
+        </RelativeLayout>
+
+
+        <View
+                android:id="@+id/vw"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000D17"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="3"
+                          android:gravity="center"
+                          android:layout_marginTop="23dp"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="170dp"
+                              android:layout_height="170dp"
+                              android:gravity="center"
+                              android:background="@drawable/bg_oval_dark"
+                >
+                    <ImageView
+                            android:id="@+id/assetImg"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:padding="10dp"
+                            android:gravity="center_horizontal"
+                            android:src="@drawable/mouse"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="18dp"
+                        android:paddingRight="30dp"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:background="@drawable/bg_black_unselected">
+                    <com.rit.tcs.CustomText.CUstomTextRebotoLight
+                            android:id="@+id/assetPath"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:text="fgfhgfg"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+                    <com.rit.tcs.CustomText.CUstomTextRegular
+                            android:id="@+id/assetPath1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:text="fgfhgfg"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="280dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="5dp"
+                        android:visibility="gone"
+                        android:text="Start At:"
+                        android:textColor="#91A1AF"
+                        android:textSize="16sp"/>
+                <TextView
+                        android:id="@+id/startTime"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="5dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"/>
+                <TextView
+                        android:layout_width="280dp"
+                        android:paddingTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="5dp"
+                        android:text="End At:"
+                        android:visibility="gone"
+                        android:textColor="#91A1AF"
+                        android:textSize="16sp"/>
+                <TextView
+                        android:id="@+id/endTime"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingLeft="5dp"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"/>
+
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical" android:layout_weight="1">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <com.rit.tcs.CustomText.CUstomTextRebotoRegular
+                            android:id="@+id/txt11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="30dp"
+                            android:visibility="visible"
+                            android:text="Please select your booking duration"
+                            android:textColor="#FFFFFF"
+                            android:textSize="26sp"/>
+                    <com.rit.tcs.CustomText.CUstomTextRebotoRegular
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#FFFFFF"
+                            android:visibility="gone"
+                            android:textSize="26sp"/>
+                    <com.rit.tcs.CustomText.CUstomTextRebotoRegular
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text=""
+                            android:visibility="gone"
+                            android:textColor="#D07313"
+                            android:textSize="26dp"/>
+                    <com.rit.tcs.CustomText.CUstomTextRebotoRegular
+                            android:id="@+id/txt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text=""
+                            android:visibility="gone"
+                            android:textColor="#FFFFFF"
+                            android:textSize="29sp"/>
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="450dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:visibility="invisible"
+                        android:layout_marginBottom="15dp"
+                        android:background="#FFFFFF"/>
+
+                <LinearLayout
+                        android:id="@+id/ll_duration"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical">
+
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/oneHr"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="01 Hour"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/oneDay"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="01 Day"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/oneWk"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="01 Week"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical">
+
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/fourHr"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="04 Hours"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/twoDay"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="02 Days"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/oneMon"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="01 Month"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:orientation="vertical">
+
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/eightHr"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="08 Hours"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/fiveDay"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="05 Days"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+                        <com.rit.tcs.CustomText.CUstomTextHelveticaRegular
+                                android:id="@+id/more"
+                                android:layout_width="260dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="10dp"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="20dp"
+                                android:background="@drawable/deselect_time"
+                                android:text="More"
+                                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                                android:textColor="@color/white"
+                                android:textSize="32sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shadow"
+                android:visibility="gone"/>
+
+        <RelativeLayout
+                android:id="@+id/hoverLyt11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:clickable="false"
+               >
+
+            <ProgressBar
+                    android:id="@+id/progressBarY"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="153dp"
+                    android:layout_height="153dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateDrawable="@drawable/custom_progress_bar"/>
+
+            <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/tcslogo"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.rit.tcs.CustomText.CUstomTextRebotoRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="Select duration"
+            android:textColor="#7F888E"
+            android:textSize="26sp"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:layout_height="wrap_content">
+        <com.rit.tcs.CustomText.CUstomTextRebotoRegular
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF" android:textSize="22sp"
+                android:padding="10dp"
+                android:text="Powered By" android:gravity="center_vertical"
+                android:layout_height="80dp"/>
+        <ImageView android:layout_width="60dp" android:layout_height="80dp"
+                   android:src="@drawable/fado_round"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/clear_data_btn1"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+        <com.rit.tcs.CustomText.CUstomTextRebotoRegular
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:text="Powered By"
+                android:gravity="center_vertical"
+                android:layout_height="80dp"/>
+        <ImageView android:layout_width="260dp"
+                   android:layout_height="80dp"
+                   android:src="@drawable/tcs_text_logo_final"/>
+    </LinearLayout>
+</RelativeLayout>

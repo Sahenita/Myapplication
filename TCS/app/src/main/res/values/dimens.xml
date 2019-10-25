@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- FOR INDICATOR AT WELCOME SCREEN-->
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_60">140dp</dimen>
+    <dimen name="margin_left">125dp</dimen>
+    <dimen name="margin_right">125dp</dimen>
+
+    <dimen name="margin_20">3dp</dimen>
+    <dimen name="margin_30">60dp</dimen>
+
+    <!-- END OF INDICATOR AT WELCOME SCREEN-->
+    <integer name="medium">300</integer>
+
+
+</resources>
